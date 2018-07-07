@@ -187,9 +187,16 @@ header #intro{
     color: #2e3d49; 
     border-left: 1px solid transparent;  
 }
+
 #login, #signup{
     width: 80%;
     margin: 0 auto;
+}
+.tab-pane{
+    display: none;
+}
+.selected{
+    display: block;
 }
 .form-row div{
     display: flex;

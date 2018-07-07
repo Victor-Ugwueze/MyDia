@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="favicon" href="" />
-    <script src="main.js"></script>
 </head>
 <body>
     <header>
@@ -20,9 +19,9 @@
             </div>
             <nav>
                 <ul class="navbar">
-                    <li class="nav-link"><a href="#">Home</a></li>
-                    <li class="nav-link"><a href="#">login</a></li>
-                    <li class="nav-link"><a href="#">Sign up for Free</a></li>
+                    <li class="nav-link" ><a href="#">Home</a></li>
+                    <li class="nav-link" data-toggle="modal" data-target="login-modal"><a href="#">login</a></li>
+                    <li class="nav-link" data-toggle="modal" data-target="login-modal"><a href="#">Sign up for Free</a></li>
                 </ul>
             </nav>  
         </div>   
@@ -55,13 +54,13 @@
             </div>
         </section>
         <section class="container">
-            <div id="sign-up-login" class="col-2">
+            <div id="sign-up-login" class="modal col-2">
                 <div class="nav-tabs" role="tablist">
-                    <a class="nav-item nav-link active" data-toggle="login" href="#login" role="tab" >Login</a>
-                    <a class="nav-item nav-link"  data-toggle="signup" href="#signup" role="tab" >Sign Up</a>
+                    <a class="nav-item nav-link active" data-target="login" href="#login" role="tab" >Login</a>
+                    <a class="nav-item nav-link"  data-target="signup" href="#signup" role="tab" >Sign Up</a>
                 </div>
                 <div class="tab-conten row">
-            <div id="login" class="tab-pane selected" style="display:none">
+            <div class="tab-pane selected"  id="login">
                         <form enctype="application/x-www-form-urlencoded"  >
                             <div class="form-row">
                                 <div class="form-heading">
@@ -72,9 +71,6 @@
                                 </div>
                                 <div class="row">
                                     <input type="password" class="form-input" name="password" autocomplete="current-password" placeholder="Password">
-                                </div>
-                                <div class="row">
-                                    <p>You agree on our Terms of use and privacy policy by clicking Sign in</p>
                                 </div>
                                 <div class="row">
                                     <input type="checkbox">
@@ -131,5 +127,6 @@
     <footer>
         <p>Copywright &copy; My Dairy 2018</p>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>
