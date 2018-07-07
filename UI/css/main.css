@@ -24,6 +24,36 @@ html{
 header{
     min-height: 100vh;
 }
+h1,h2{
+	margin: 0;
+    letter-spacing: 1px;
+	font-weight: 300;
+	text-transform: uppercase;
+	
+}
+
+h1{
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 240%;
+	word-spacing: 4px;
+	
+}
+
+h2{
+	font-size: 180%;
+	word-spacing: 2px;
+	text-align: center;
+	margin: 10px auto;
+	margin-bottom: 30px;
+
+}
+h3{
+	font-size: 120%;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 20px;
+}
 
 /*............................................/
 
@@ -104,16 +134,97 @@ header #intro{
 #home-text button:hover{
     background: #0e84ac;
     cursor: pointer;
-    transition: background-color 0.4s, color 0.4s, border 0.4s;
+    transition: background-color 0.7s, color 0.7, border 0.7s;
 }
 
 .row{
     width: 100%;
     padding: 5px 1%;
     display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+    margin-bottom: 2px;
     justify-content: space-around;
 }
+.col-2{
+    width: 50%;
+}
+.col-4{
+    width: 25%;
+}
+.form-col:first-of-type{
+    margin-right: 1%;
+}
+#sign-up-login{
+   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    margin: 0 auto;
+    z-index: 2;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-radius: 4px;
+}
+#sign-up-login .nav-tabs{
+    display: flex;
+}
+.nav-tabs .nav-item{
+    flex: auto;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #7d97ad;
+    background:#fafbfc; 
+    border-left: 1px solid #dbe2e8;
+}
+.nav-tabs .active{
+    cursor: default;
+    background: #fff;
+    font-weight: bold;
+    color: #2e3d49; 
+    border-left: 1px solid transparent;  
+}
+#login, #signup{
+    width: 80%;
+    margin: 0 auto;
+}
+.form-row div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.form-heading{
+    font-weight: 300;
+    line-height: 1.3cm;
+    font-size: 28px;
+    text-align: left;
+}
 
+.form-heading p{
+    line-height: 0.9cm;
+    font-size: 14px;
+}
+input[type='text'],input[type='password']{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #dbe2e8;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    margin-top: 20px;
+}
+.form-row .form-input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form-input:focus{
+    border: 1px solid var(--primary);
+}
 footer{
     text-align: center;
     height: 50px;
