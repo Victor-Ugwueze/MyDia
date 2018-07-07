@@ -1,6 +1,5 @@
 :root{
-    --primary :#00bfff; 
-    --btn: 
+    --primary :#073e50; 
   }
 
 *{
@@ -32,7 +31,7 @@ header{
 
 /.............................................*/
 .container-fluid {
-
+    width: 100%;
 }
 .container{
     width: 80%;
@@ -40,7 +39,7 @@ header{
 }
 
 header .container-fluid{
-    min-height: 70px;
+    min-height: 5vw;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
     display: flex;
@@ -71,5 +70,46 @@ nav .navbar{
 }
 
 header #intro{
-    background-image: url()
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,3)), url('../images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+#home-text{
+    color: #fff;
+    margin-left:10%;
+}
+#home-text p,#home-text h1{
+    padding-top:20px;
+}
+.btn{
+    padding: 10px 20px;
+    columns: #fff;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+.btn-primary{
+    background: var(--primary);
+    color: #fff;
+}
+.how-it-works{
+    margin-top: 20px;
+}
+#home-text button:hover{
+    background: #0e84ac;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s, border 0.4s;
+}
+
+.row{
+    width: 100%;
+    padding: 5px 1%;
+    display: flex;
+    justify-content: space-around;
 }
