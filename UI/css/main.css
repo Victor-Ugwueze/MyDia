@@ -67,7 +67,9 @@ h3{
     width: 80%;
     margin: auto;
 }
-
+header{
+    padding-bottom: 0;
+}
 header .container-fluid{
     min-height: 5vw;
     background: #fff;
@@ -107,12 +109,13 @@ header #intro{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: space-between;
+    padding-bottom: 0;
 }
 #home-text{
     color: #fff;
@@ -131,15 +134,26 @@ header #intro{
     background: var(--primary);
     color: #fff;
 }
-.how-it-works{
-margin: 0;
+.how-it-works-btn{
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
 }
 #home-text button:hover{
     background: #0e84ac;
     cursor: pointer;
     transition: background-color 0.7s, color 0.7, border 0.7s;
 }
-
+.how-it-works h2::after{
+    display:block;
+    height:1px;
+    background-color:#e67e22;
+    content: " ";
+    width:100px;
+    margin: 0 auto;
+    margin-top:10px;
+    margin-bottom: 0;
+}
 .row{
     width: 100%;
     padding: 5px 1%;
@@ -253,6 +267,5 @@ footer{
     background: #fff;
 }
 .active-modal-background{
-    background: gray;
     opacity: 0.3;
 }
