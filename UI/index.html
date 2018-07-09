@@ -19,9 +19,9 @@
             </div>
             <nav>
                 <ul class="navbar">
-                    <li class="nav-link" ><a href="#">Home</a></li>
-                    <li class="nav-link" data-toggle="modal" data-target="login-modal"><a href="#">login</a></li>
-                    <li class="nav-link" data-toggle="modal" data-target="login-modal"><a href="#">Sign up for Free</a></li>
+                    <li class="nav-link" ><a href="index.html">Home</a></li>
+                    <li class="nav-link" data-toggle="login" data-target="sign-up-login"><a href="#">login</a></li>
+                    <li class="nav-link" data-toggle="signup" data-target="sign-up-login"><a href="#">Sign up for Free</a></li>
                 </ul>
             </nav>  
         </div>   
@@ -35,7 +35,7 @@
         </div>   
     </header>
     <main>
-        <section class="container">
+        <section class="container how-it-works">
             <div class="row">
                 <h2>How it works</h2>
             </div>
@@ -52,78 +52,77 @@
                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like</p>
                </div>
             </div>
-        </section>
-        <section class="container">
-            <div id="sign-up-login" class="modal col-2">
-                <div class="nav-tabs" role="tablist">
-                    <a class="nav-item nav-link active" data-target="login" href="#login" role="tab" >Login</a>
-                    <a class="nav-item nav-link"  data-target="signup" href="#signup" role="tab" >Sign Up</a>
-                </div>
-                <div class="tab-conten row">
-            <div class="tab-pane selected"  id="login">
-                        <form enctype="application/x-www-form-urlencoded"  >
-                            <div class="form-row">
-                                <div class="form-heading">
-                                    <h4></h4>Log in to your account, to acces your journals</h4>
-                                </div>
-                                <div class="row">
-                                    <input type="text" class="form-input" name="email" autocomplete="username" placeholder="Email Address">
-                                </div>
-                                <div class="row">
-                                    <input type="password" class="form-input" name="password" autocomplete="current-password" placeholder="Password">
-                                </div>
-                                <div class="row">
-                                    <input type="checkbox">
-                                    <label>Agree to our <a href="#">Terms of use</a> and <a href="#">Privacy policy</a></label>
-                                </div>
-                                <div>
-                                    <input id="btn-login" type="submit" value="Log In" class="btn btn-primary form-input">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="tab-pane" id="signup"> 
-                        <form enctype="application/x-www-form-urlencoded" >
+        </section>   
+    </main>
+    <section class="container">
+        <div id="sign-up-login" class="modal col-2">
+            <div class="nav-tabs" role="tablist">
+                <a class="nav-item active" data-target="login" id="select-tab-login" role="tab" >Login</a>
+                <a class="nav-item"  data-target="signup" id="select-tab-signup" role="tab" >Sign Up</a>
+            </div>
+            <div class="tab-conten row">
+        <div class="tab-pane selected"  id="login">
+                    <form enctype="application/x-www-form-urlencoded"  >
+                        <div class="form-row">
                             <div class="form-heading">
-                                <h4>Sign up to My Diary</h4>
-                                <p>Enjoy the expereinces of having all your thouhgts in one place
-                                </p>
+                                <h4></h4>Log in to your account, to acces your journals</h4>
                             </div>
-                            <div class="form-row">
-                                <div class="row">
+                            <div class="row">
+                                <input type="text" class="form-input" name="email" autocomplete="username" placeholder="Email Address">
+                            </div>
+                            <div class="row">
+                                <input type="password" class="form-input" name="password" autocomplete="current-password" placeholder="Password">
+                            </div>
+                            <div class="row">
+                                <input type="checkbox">
+                                <label>Agree to our <a href="#">Terms of use</a> and <a href="#">Privacy policy</a></label>
+                            </div>
+                            <div>
+                                <input id="btn-login" type="submit" value="Log In" class="btn btn-primary form-input">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane" id="signup"> 
+                    <form enctype="application/x-www-form-urlencoded" >
+                        <div class="form-heading">
+                            <h4>Sign up to My Diary</h4>
+                            <p>Enjoy the expereinces of having all your thouhgts in one place
+                            </p>
+                        </div>
+                        <div class="form-row">
+                            <div class="row">
+                                <div class="col-2 form-col">
+                                    <input type="text" class="form-input" name="first_name" placeholder="FIrst Name">
+                                </div>
+                                <div class="col-2">
+                                    <input type="text" class="form-input" name="first_name" placeholder="FIrst Name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-input" name="email" autocomplete="username" placeholder="Email Address">
+                            </div>
+                            <div class="row">
                                     <div class="col-2 form-col">
-                                        <input type="text" class="form-input" name="first_name" placeholder="FIrst Name">
+                                        <input type="password" class="form-input" name="password" autocomplete="current-password" placeholder="Password">
                                     </div>
                                     <div class="col-2">
-                                        <input type="text" class="form-input" name="first_name" placeholder="FIrst Name">
+                                        <input type="password" class="form-input" name="confirm-password" autocomplete="confirm-password" placeholder="Confirm Password">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <input type="text" class="form-input" name="email" autocomplete="username" placeholder="Email Address">
-                                </div>
-                                <div class="row">
-                                        <div class="col-2 form-col">
-                                            <input type="password" class="form-input" name="password" autocomplete="current-password" placeholder="Password">
-                                        </div>
-                                        <div class="col-2">
-                                            <input type="password" class="form-input" name="confirm-password" autocomplete="confirm-password" placeholder="Confirm Password">
-                                        </div>
-                                    </div>
-                                   <div class="row">
-                                    <input type="checkbox">
-                                    <label>Agree to our <a href="#">Terms of use</a> and <a href="#">Privacy policy</a></label>
-                                   </div>
-                                <div>
-                                    <input id="btn-login" type="submit" value="Log In" class="btn btn-primary form-input">
-                                </div>
+                               <div class="row">
+                                <input type="checkbox">
+                                <label>Agree to our <a href="#">Terms of use</a> and <a href="#">Privacy policy</a></label>
+                               </div>
+                            <div>
+                                <input id="btn-login" type="submit" value="Log In" class="btn btn-primary form-input">
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section>
-    </main>
-
+        </div>
+    </section>
     <footer>
         <p>Copywright &copy; My Dairy 2018</p>
     </footer>
