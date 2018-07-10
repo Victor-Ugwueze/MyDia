@@ -266,6 +266,36 @@ footer{
     opacity: none !important;
     background: #fff;
 }
+
+.icon-bar:before{
+    content: "";
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin-top: 6px;
+    margin-bottom: 1.5px;
+}
+.icon-bar{
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+    margin-top: 12px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.icon-bar:after{
+    content: "";
+    display: block;
+    width: 30px;
+    cursor: pointer;
+    height: 4px;
+    background-color: black;
+    margin-top: 0;
+}
 .active-modal-background{
     opacity: 0.3;
 }
