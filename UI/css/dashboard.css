@@ -75,7 +75,60 @@ header #top-bar{
 .hide{
     display: none;
 }
+.nav-tabs li{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.nav-tabs #last-item{
+    margin-top: auto;
+}
+.nav-tabs li a{
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+}
+#diary{
+    width: 80%;
+}
+#add-entry{
+    display: flex;
+    margin-top:30px;
+    justify-content: flex-end;
+}
+#dairy-content{
+    border: 2px solid #ececec;
+    margin-top: 30px;
+    padding: 4px 0;
+    background-color: transparent;
+}
+#diary-heading{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 13px;
+    min-height: 60px;
+    border-bottom: 1px solid #ececec;
+}
 
+#dairy-entries{
+    display: flex;
+    flex-direction: column;
+}
+.entry-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px solid #ececec;
+    padding-left: 2em;
+    padding-right: 2em;
+    min-height: 70px;
+    padding-top: 12px;
+}
+.entry-item>li{
+    flex-basis: 1;
+}
 @media only screen and (max-width: 890px){
     #menu-icon{
         display: inline-block;

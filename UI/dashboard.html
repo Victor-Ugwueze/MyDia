@@ -27,7 +27,42 @@
             </header>
             <main>
                 <section id="main-section">
-
+                    <div id="diary" class="tab-pane selected container">
+                       <div id="add-entry">
+                            <button class="btn btn-primary add-entry">Add New Entry</button>
+                       </div>
+                       <div id="dairy-content">
+                            <div id="diary-heading">
+                                <h4>Diary Entry</h4>
+                                <h4>Cretated</h4>
+                                <h4>Make Public</h4>
+                            </div>
+                            <ul id="dairy-entries">
+                                <li class="entry-item">
+                                    <div>
+                                        <h4>The story of a village girl</h4>
+                                        <p>There lived a poor girl...</p>
+                                    </div>
+                                    <p>12/18/2018</p>
+                                    <a href="#">make</a>
+                                </li>
+                                <li class="entry-item">
+                                    <div>
+                                        <h4>why I am writing</h4>
+                                        <p>This is because I have come to...</p>
+                                    </div>
+                                    <p>12/18/2018</p>
+                                    <a href="#">make</a>
+                                </li>
+                            </ul>
+                       </div>
+                    </div>
+                    <div id="settings" class="tab-pane">
+                        Sttings
+                    </div>
+                    <div id="profile" class="tab-pane">
+                        Profile
+                    </div>
                 </section>
             </main>
         </div>
@@ -36,8 +71,11 @@
                     <img src="">
             </div>
             <ul class="nav-tabs" role="tablist">
-                <li><a class="active" data-target="login" id="select-tab-login" role="tab" >Login</a></li>
-                <li><a class=""  data-target="signup" id="select-tab-signup" role="tab" >Sign Up</a></li>
+                <li><a class="nav-it" data-target="login" role="tab" >Home</a></li>
+                <li><a class="nav-it active"  data-target="diary"  role="tab" >My Diary</a></li>
+                <li><a class="nav-it" data-target="settings" role="tab" >Settings</a></li>
+                <li><a class="nav-it"  data-target="profile" role="tab" >Profile</a></li>
+                <li><a class="nav-it" id="last-item">Logout</a></li>
             </ul>
         </div>
     </div>
