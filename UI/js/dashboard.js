@@ -7,20 +7,6 @@ iconbar.addEventListener('click',function(){
     console.log("yes",a);
 });
 
-[...document.querySelectorAll('.nav-it')].forEach((element)=>{
-    element.addEventListener('click',function(){
-        let el = document.querySelector('.nav-it.active');
-        let all = document.querySelectorAll('.nav-it');
-        // console.log(el,all);
-        //Change Active Navigation tab
-        SelectElement(this,[...all],'active');
-
-        //Select tab content
-        el = document.querySelector('#main-section #'+this.dataset.target);
-        all = document.querySelectorAll('.tab-pane');
-        SelectElement(el,[...all],'selected');
-    })
-})
 
 /*
 Remove class from the current element and add class to another element

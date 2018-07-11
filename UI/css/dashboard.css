@@ -72,6 +72,7 @@ header #top-bar{
 .hide{
     display: none;
 }
+<<<<<<< HEAD
 .nav-tabs li{
     display: flex;
     flex-direction: column;
@@ -156,6 +157,9 @@ header #top-bar{
     font-size: 12px;
     padding: 2px 4px;
 }
+=======
+
+>>>>>>> parent of ae7c187... list diary entries
 @media only screen and (max-width: 890px){
     #menu-icon{
         display: inline-block;

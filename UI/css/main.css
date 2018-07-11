@@ -129,7 +129,6 @@ header #intro{
     padding: 10px 20px;
     columns: #fff;
     border-radius: 4px;
-    cursor: pointer;
     border: 1px solid transparent;
 }
 
@@ -219,7 +218,6 @@ header #intro{
 .tab-pane{
     display: none;
 }
-
 .selected{
     display: block;
 }
