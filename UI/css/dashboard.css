@@ -25,9 +25,6 @@ header #top-bar{
     flex-shrink: 0;
     flex: 0 0 300px;
 }
-#left-section-list{
- 
-}
 
 #menu-icon{
     display: none;
@@ -105,12 +102,23 @@ header #top-bar{
 #diary-heading{
     display: flex;
     justify-content: space-between;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 2em; 
+    /* padding-right: 2em;  */
     padding-top: 13px;
     min-height: 60px;
+    font-size: 14px;
     border-bottom: 1px solid #ececec;
+    align-items: stretch;
 }
+
+#diary-heading .entry-head{
+    flex-grow: 1;
+    /* margin-left: 50px; */
+}
+#diary-heading #title{
+    flex-grow: 8;
+}
+
 
 #dairy-entries{
     display: flex;
@@ -122,12 +130,31 @@ header #top-bar{
     padding: 4px 0;
     border-bottom: 1px solid #ececec;
     padding-left: 2em;
+    font-size: 14px;
     padding-right: 2em;
     min-height: 70px;
     padding-top: 12px;
+    cursor: pointer;
 }
-.entry-item>li{
-    flex-basis: 1;
+.entry-item div{
+    flex-basis: 60%;
+}
+.entry-item .created-at{
+    flex-basis: 15%;
+}
+.entry-item .action{
+    flex-basis: 20%;
+}
+.entry-item .created-at{
+    /* padding-right: 5%; */
+}
+.entry-item .action{
+    padding-left: 2%;
+    padding-right: 0;
+}
+.action-btn{
+    font-size: 12px;
+    padding: 2px 4px;
 }
 @media only screen and (max-width: 890px){
     #menu-icon{

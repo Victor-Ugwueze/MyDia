@@ -1,5 +1,6 @@
 :root{
     --primary :#073e50; 
+    --danger : #f23f21;
   }
 
 *{
@@ -131,9 +132,14 @@ header #intro{
     cursor: pointer;
     border: 1px solid transparent;
 }
+
 .btn-primary{
     background: var(--primary);
     color: #fff;
+}
+.btn-danger{
+    background: var(--danger);
+    color:  #fff;
 }
 .how-it-works-btn{
     margin-top: 20px;
