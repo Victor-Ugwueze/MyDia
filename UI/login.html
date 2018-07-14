@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A website to pen down your feelings and thoughts">
+    <meta name="keywords" content="journal, online diary, free online diary, diary website">
+    <meta name="author" content="Victor Ugwueze">
+    <title>My Diary | Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="favicon" href="" />
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="brand">
+                My Dairy
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li class="nav-link" ><a href="index.html">Home</a></li>
+                    <li class="nav-link" data-toggle="login" data-target="sign-up-login"><a href="#">login</a></li>
+                    <li class="nav-link" data-toggle="signup" data-target="sign-up-login"><a href="#">Sign up for Free</a></li>
+                </ul>
+            </nav>  
+        </div>   
+    </header>
+    <main>
+        <section class="container">
+            <div id="sign-up-login" class="modal col-2" style="display:block">
+                <div class="nav-tabs" role="tablist">
+                    <a class="nav-item active" data-target="login" id="select-tab-login" role="tab" >Login</a>
+                </div>
+                <div class="tab-conten row">
+            <div class="tab-pane selected"  id="login">
+            <form enctype="application/x-www-form-urlencoded"  >
+                <div class="form-row">
+                    <div class="form-heading">
+                        <h4></h4>Log in to your account, to acces your journals</h4>
+                    </div>
+                    <div class="row">
+                        <input type="text" class="form-input" name="email" autocomplete="username" placeholder="Email Address">
+                    </div>
+                    <div class="row">
+                        <input type="password" class="form-input" name="password" autocomplete="current-password" placeholder="Password">
+                    </div>
+                    <div class="row">
+                        <label>By signing in you have agreed to our <a href="#">Terms of use</a> and <a href="#">Privacy policy</a></label>
+                    </div>
+                    <div>
+                        <input id="btn-login" type="submit" value="Log In" class="btn btn-primary form-input">
+                    </div>
+                </div>
+            </form>
+            </div>
+        </section>  
+    </main>
+    
+    <footer>
+        <p>Copywright &copy; My Dairy 2018</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
