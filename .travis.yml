@@ -7,4 +7,8 @@ before_install:
 cache:
 directories:
   - "node_modules"
-
+after-test:
+- npm run covers
+after_script:
+  - npm install -g codeclimate-test-reporter
+  - codeclimate-test-reporter < coverage/lcov.info
