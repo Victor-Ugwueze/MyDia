@@ -7,7 +7,7 @@
     "start": "nodemon server/server.js --exec babel-node",
     "build": "npm run clean && npm run build-server",
     "test": "nyc --reporter=text --reporter=html mocha --require babel-register test/* --exit",
-    "test:cov": "NODE_ENV=test NODE_PATH=./src babel-node -- ./node_modules/.bin/istanbul cover -x './*.js' --include '**/*.js'  _mocha -- 'test/**/*.js' "
+    "coveralls": "NODE_ENV=test NODE_PATH=./src babel-node -- ./node_modules/.bin/istanbul cover -x './*.js' --include '**/*.js'  _mocha -- 'test/**/*.js' "
   },
   "repository": {
     "type": "git",

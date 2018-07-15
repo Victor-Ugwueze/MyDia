@@ -7,6 +7,8 @@ before_install:
 cache:
 directories:
   - "node_modules"
-after-script:
-- npm run test:cov
-- npm install coveralls && cat ./coverage/lcov.info | coveralls
+after-test:
+  - npm run coveralls
+after_script:
+  - npm install -g codeclimate-test-reporter
+  - codeclimate-test-reporter < coverage/lcov.info
