@@ -7,6 +7,6 @@ before_install:
 cache:
 directories:
   - "node_modules"
-after_script: NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha --require babel-register --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
-after_test:
-- npm run coveralls
+after-script:
+- "npm run test:cov"
+- "npm install coveralls && cat ./coverage/lcov.info | coveralls"
