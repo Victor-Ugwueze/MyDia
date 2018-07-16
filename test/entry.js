@@ -1,9 +1,9 @@
-import Coveralls from 'coveralls'
+
 import chai from 'chai';
 import chaiHttp from 'chai-http';
 
 import server from '../server/server';
-Coveralls.wear!;
+
 const should = chai.should();
 
 process.env.NODE_ENV = 'test';
