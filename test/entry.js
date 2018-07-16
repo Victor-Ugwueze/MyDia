@@ -22,12 +22,3 @@ it('Should list all diary entry on /api/v1/entries', (done) => {
     });
 });
 
-it('Should get a diary entry on /api/v1/entries/:id', (done) => {
-  chai.request(server)
-    .get('/api/v1/entries/1')
-    .end((err, res) => {
-      res.should.have.status(200);
-      res.body.should.be.a('number');
-      done();
-    });
-});
