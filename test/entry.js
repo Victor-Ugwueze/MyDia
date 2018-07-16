@@ -1,4 +1,4 @@
-import Coveralls 'coveralls'
+import Coveralls from 'coveralls'
 import chai from 'chai';
 import chaiHttp from 'chai-http';
 
