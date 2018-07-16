@@ -4,7 +4,8 @@
   "description": "MyDiary is an online journal where users can pen down their thoughts and feelings. ",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server/server.js --exec babel-node",
+    "start": "node server/server.js --exec babel-node",
+    "start-dev": "nodemon server/server.js --exec babel-node",
     "build": "npm run clean && npm run build-server",
     "test": "nyc --reporter=text --reporter=html mocha --require babel-register test/* --exit",
     "coverage": "nyc --reporter=html --reporter=text --reporter=lcov mocha --reporter spec --require babel-register test/ --timeout 600000 --exit",
