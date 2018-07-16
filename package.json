@@ -7,7 +7,7 @@
     "start": "nodemon server/server.js --exec babel-node",
     "build": "npm run clean && npm run build-server",
     "test": "nyc --reporter=text --reporter=html mocha --require babel-register test/* --exit",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "test-travis": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec --require babel-register ./test/* --exit"
   },
   "repository": {
     "type": "git",
