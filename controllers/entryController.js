@@ -7,4 +7,8 @@ router.get('/api/v1/entries', (req, res) => {
   res.json(entries);
 });
 
+router.get('/api/v1/entries/1', (req, res) => {
+  res.json(1);
+});
+
 module.exports = router;

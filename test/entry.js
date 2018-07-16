@@ -21,3 +21,4 @@ it('Should list all diary entry on /api/v1/entries', (done) => {
       done();
     });
 });
+
