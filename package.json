@@ -7,8 +7,8 @@
     "start": "nodemon server/server.js --exec babel-node",
     "build": "npm run clean && npm run build-server",
     "test": "nyc --reporter=text --reporter=html mocha --require babel-register test/* --exit",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- --require babel-register ./test/* --exit",
-    "coveralls": "npm run cover -- --report lcovonly && cat coveralls | coverage/lcov.info"
+    "coverage": "nyc --reporter=html --reporter=text --reporter=lcov mocha --reporter spec --require babel-register test/ --timeout 600000 --exit",
+    "coveralls": "npm run coverage -- --report lcovonly && cat coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
