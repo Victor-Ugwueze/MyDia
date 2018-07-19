@@ -17,12 +17,13 @@ const users_table_query = `CREATE TABLE IF NOT EXISTS users(
             created_at timestamp DEFAULT NOW(),
             role_id int NOT NULL
         )` 
+
  
  export default function run(pool) {
  	return new Promise( (resolve, reject) => {
  		pool.query(users_table_query)
         .then((res) => {
-        	resolve('yes')
+        	resolve('yes man')
         })
         .catch((err) => {
         	reject(err)
