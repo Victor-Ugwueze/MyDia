@@ -5,9 +5,7 @@ import Entry from '../models/entry';
 
 const router = express.Router();
 
-router.get('/',(req,res) =>{
-	res.send('hello');
-})
+
 // get all diary entry
 router.get('/api/v1/entries', (req, res) => {
   res.status(200).json({

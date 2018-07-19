@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node bin/production",
+    "migrate": "node --require babel-register migrations/migrate --timeout 600000 --exit",
     "start-dev": "nodemon bin/dev",
     "test": "nyc --reporter=text --reporter=html mocha --require babel-register test/* --exit",
     "coverage": "nyc --reporter=html --reporter=text --reporter=lcov mocha --reporter spec --require babel-register test/ --timeout 600000 --exit",
