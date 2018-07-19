@@ -3,14 +3,23 @@ node_js:
 - 8.11.1
 cache:
   directories:
-    - node_modules
+  - node_modules
 before_install:
 - npm install -g mocha
 - npm install
 script:
 - npm run test
 after_script:
-  - npm install -g codeclimate-test-reporter
-  - codeclimate-test-reporter < coverage/lcov.info
+- npm install -g codeclimate-test-reporter
+- codeclimate-test-reporter < coverage/lcov.info
 after_success:
 - npm run coveralls
+deploy:
+  provider: heroku
+  app: test-myci
+  api_key:
+    secure: UTTNlU/SRJmJGtG/TmgNQsjXQeuU2Cfrls3eORWSdhLPEtdFBqGCzZsmv9dxBa7Mmz83uCxtLxKgpyAM/muGwPBhDD0iieywafWQNDvtu8WoS2rymMzWf4thP85t7o50+M0V50CP0xORuF2kCJyTNdpcqn8cyeLDYw9C5rrxbDHPwYNEEY1lE+LB5JZoiNWdsac4NonH2YA/jDyphwY5SBF7EBkw6/D9216F7TIR4SCPkuiTzBw2n781qJUcZ9mBblJfNtAlFMFMLy/aV8GDGp/oqi+1qbetaDnKokvtBKelMKxIXvSVpgG9I7l9VBcUgmj3xXQZtUcEJZMO08+iA4FklBwK3TlpsZ2YIVJfW9VCf7hNVQKnPDTIAjvkmwjoU3OF/yRysM6eMuLlUbba4gb3I4cIDnS2hm43XnuvYqEW7O4RqeFX03mcmQwGmDZJEbPDthvaPb/WxaqcOjRUVCa29X5r019kH1jHoV0QjBQlONCUowUwpe0hv7zME3n+3Q8PlKc1/PrNgCUdRSe0//ucRb+MFs+AzrORhkHawrEvU78gzu851TsWFFHEjlT2/nkHLSnokjAGwKCBsnjS57ldyyGgDBlqJNgZCln6NfHFN28oHFCCmxGivcd5coeG3qjaVyLdGu7XblMU8ZPLS1cRQxtIONU8i8+MAHU610s=
+  on:
+    repo: Victor-Ugwueze/MyDia
+    branch: develop
+before_deploy: npm run migrate

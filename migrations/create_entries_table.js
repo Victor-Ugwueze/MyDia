@@ -12,7 +12,6 @@ const entries_table_query = `CREATE TABLE IF NOT EXISTS entries(
  	return new Promise( (resolve, reject) => {
  		pool.query(entries_table_query)
         .then((res) => {
-        	console.log(res.rows[0]);
         	resolve('migrated, entries table created');
         })
         .catch((err) => {

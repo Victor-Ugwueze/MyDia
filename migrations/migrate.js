@@ -5,14 +5,10 @@ import createEntriesTable from './create_entries_table';
 
 createUsersTable(pool)
 	.then((res) =>{
-			console.log(res);
 		createEntriesTable(pool)
-			.then((res)=>{
-				console.log(res)
-				pool.end();
-			}).catch(()=>{
-				
-			})		
+	})
+	.then((res) =>{
+		console.log("Tables migrated");
 	})
 	.catch((err) =>{
 		console.log(err)

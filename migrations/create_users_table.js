@@ -14,7 +14,6 @@ const users_table_query = `CREATE TABLE IF NOT EXISTS users(
  	return new Promise( (resolve, reject) => {
  		pool.query(users_table_query)
         .then((res) => {
-        	console.log(res.rows[0])
         	resolve('migrated, users table created')
         })
         .catch((err) => {

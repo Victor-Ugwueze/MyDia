@@ -1,6 +1,6 @@
 import { Pool, Client } from 'pg';
 const connectionString = 
-			process.env.ELEPHANTSQL_URL || 'localhost://postgres:root@localhost:5432/mydia';
+			process.env.DATABASE_URL || 'localhost://postgres:root@localhost:5432/mydia';
 
 
 const pool = new Pool({
