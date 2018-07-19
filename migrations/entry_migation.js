@@ -9,7 +9,7 @@ const pool = new Pool({
     connectionString: connectionString,
 })
 
-const users_table_query = `CREATE TABLE IF NOT EXISTS users(
+const users_table_query = `CREATE TABLE IF NOT EXISTS test(
             id serial PRIMARY KEY NOT NULL,
             username varchar(255) NOT NULL,
             email varchar(255) NOT NULL,
